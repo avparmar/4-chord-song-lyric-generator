@@ -1,0 +1,67 @@
+Context: This project was made for Artificial Intelligence Spring 2018 at Northeastern University!
+
+My name: Aditya Parmar
+
+My Project Proposal: Artificial Intelligence to find the next top pop song!
+
+
+
+PROJECT DESCRIPTION:
+  What is my project: I am hoping to use some ai algorithms to construct a top pop song by means of scanning in lyrics of other
+  super popular top songs and using a prediction system to spit out a brand new one.
+  
+  The Problem: I want to figure out how to write the perfect radio song. I don't know how to myself, but I have plenty of past
+  examples.
+
+  Additional Detail: Many of the top songs of the past 50 years or so of radio music are songs that can be classified as 
+  "I-V-vi-IV" (If you've ever heard of a "four chord song" this is an example of a type of those). Without getting too technical
+  into musical theory, this simple chord pattern works because the chords played in this way are in harmony. This is seen in 
+  practice when these types of songs repeatedly end up on the top charts and even end up topping up other such songs, while 
+  consumers seem to be fooled into thinking they're getting plenty of variety. My mission is then this: Now that I have a winning
+  chord pattern, all I have to do is come up with the perfect lyrics, and it should be guaranteed to make plenty of money, or at
+  the very least, impress a few people. I compose, but I don't write lyrics, so I figured I would use algorithms to do this part
+  for me. I was inspired to do this project by an AI that participated in a film festival by writing its own screenplay. The 
+  result was hilariously entertaining when produced with real people so I'm very curious to see what happens in my application.
+  Obviously, there are a few key differences between this project and the screenplay writer, so there may be some gaps I'll need
+  to fill on my own, but I think this is definitely achievable.
+  
+  Input: There are several lists of I-V-vi-IV songs. A fairly large one exists on wikipedia:
+  https://en.wikipedia.org/wiki/List_of_songs_containing_the_I-V-vi-IV_progression
+  This list contains a little under 200 songs, which I think should be enough, at least for a class project. The results
+  could be amusing at the least. I plan on scraping the lyrics from youtube subtitles so that I can time index them as well.
+  From there, I will construct an AI with python to make a prediction on words and their timings.
+  
+  Motivation: Curiosity, Potential Wealth, Learning experience, Fun.
+  
+  Output: One song's worth of lyrics.
+  
+  
+ALGORITHMS:
+  On examining the screenwriting AI's, consulting the internet for similar tasks, and also speaking with more advanced CS 
+  students on their opinions for recommended algorithms, a couple algorithms were mentioned in common. They are:
+    LSTM: Long short term memory. While I don't know much about this yet to talk about it in detail, it can produce
+    predictions for time based word lists. A common example on pages is an AI that translates text from one language
+    to another. If I can extract lyrics and timestamp them, I can potentially achieve a similar result.
+    
+    Sequence to Sequence: This is more advanced, but it's still a recurrent neural network, like lstm. The theory is that the
+    grouping of the words can be used for prediction and these carry over. 
+    
+    I have decided to move forward with LSTM because it seems promising and well documented.
+    
+    Resources for learning: There exist plenty of papers and tutorials on these algorithms.
+    
+      Wikipedia: https://en.wikipedia.org/wiki/Long_short-term_memory
+      Tutorial on lstm: https://deeplearning4j.org/lstm.html
+      A dissectable, practical application: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+      tensorflow details: https://www.tensorflow.org/tutorials/recurrent#lstm
+      
+RESULTS:
+  I expect to have, in some form, a song, created from the average of all other top similar tune songs. I will then attempt
+  to produce a real song out of this, perform it on ukulele, and record the performance, and note how much traction it gets.
+  A surprising amount of radio songs come from obscure spots, so it's not unlikely that my song could later appear on the
+  radio and I acquire immense wealth.
+  
+  
+ 
+
+
